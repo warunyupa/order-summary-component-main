@@ -21,8 +21,10 @@
  body{
     background-image: url('/images/pattern-background-desktop.svg');
     background-blend-mode: hard-light;
-    background-size: 175%;
+    background-size: 1440px;
+    background-repeat: no-repeat;
     display: grid;
+    
     justify-content: center;
     align-items: center;
  }
@@ -31,11 +33,17 @@
    margin-top: 100px;
    border: 1px solid red;
    border-radius: 25px;
+   display: grid;
    overflow: hidden;
  }
  
  .form-top img{
    width:100%;
+   height: 75%;
+ }
+
+ .form-bottom{
+   margin-top: 2rem;
  }
  
  

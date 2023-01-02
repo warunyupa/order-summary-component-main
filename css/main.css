@@ -19,8 +19,20 @@
  }
 
  body{
-    background-color: var(--VPaleblue);
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-size: cover;
     display: grid;
     justify-content: center;
     align-items: center;
+    width: 1440px;
  }
+
+ .form{
+   border: 1px solid red;
+ }
+ 
+ .top img{
+   width:100%;
+ }
+ 
+ 

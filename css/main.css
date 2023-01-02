@@ -36,14 +36,13 @@
    display: grid;
    overflow: hidden;
  }
- 
+
  .form-top img{
    width:100%;
-   height: 75%;
  }
 
  .form-bottom{
-   margin-top: 2rem;
+   margin-top: 5rem;
  }
  
  

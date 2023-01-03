@@ -14,27 +14,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
  }
 
  body{
     background-image: url('/images/pattern-background-desktop.svg');
-    background-blend-mode: hard-light;
-    background-size: 1440px;
     background-repeat: no-repeat;
     display: grid;
-    
     justify-content: center;
     align-items: center;
  }
 
  .form{
+   background-color: white;
+   width: 450px;
    margin-top: 100px;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    border-radius: 25px;
    display: grid;
    overflow: hidden;
+   align-items: center;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
  }
 
  .form-top img{
@@ -42,7 +43,94 @@
  }
 
  .form-bottom{
-   margin-top: 5rem;
+  text-align: center;
+  padding: 0 20px 0 20px;
+ }
+
+ h1{
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+ }
+
+p{
+  margin-top: 2rem;
+  color: var(--Desatblue);
+  padding-left: 50px;
+  padding-right: 50px;
  }
  
+ .summary-plan{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--VPaleblue); 
+  border-radius: 8px;
+  padding: 15px 0 15px 0;
+ }
+
+ .summary-plan p{
+  margin-top:0;
+  margin-left: -2.5rem;
+ }
+
+ span{
+  display: block;
+  font-weight: bold;
+  color: var(--Darkblue);
+ }
+
+ a{
+  margin-left: 1.5rem;
+  text-decoration: none;
+ }
+
+ #change{
+  text-decoration: underline;
+  color: var(--Brightblue);
+ }
+
+ .btn{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ }
  
+ #proceed{
+  background-color: var(--Brightblue);
+  border-radius: 10px;
+  border: none;
+  padding: 10px 100px 10px 100px;
+  color: var(--VPaleblue);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+ 
+ #cancel{
+  margin-top: 1rem;
+  background: none;
+  border:none;
+  color: var(--Desatblue);
+ }
+ 
+#change:hover{
+  color: hsl(245, 84%, 60%);
+}
+#proceed:hover{
+  background-color: hsl(245, 84%, 60%);
+}
+
+#cancel:hover{
+  color: var(--Darkblue);
+}
+
+/*setting for media version*/
+
+@media only screen and (max-width:960px) {
+  .form{
+    width: 375px;
+    height: auto;
+  }
+}

@@ -20,7 +20,9 @@
 
  body{
     background-image: url('/images/pattern-background-desktop.svg');
+    background-size: contain; /*full screen background*/
     background-repeat: no-repeat;
+    background-color: var(--Paleblue);
     display: grid;
     justify-content: center;
     align-items: center;

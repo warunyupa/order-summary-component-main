@@ -81,7 +81,7 @@ p{
   color: var(--Darkblue);
  }
 
- a{
+ button{
   margin-left: 1.5rem;
   text-decoration: none;
  }
@@ -120,10 +120,12 @@ p{
 }
 #proceed:hover{
   background-color: hsl(245, 84%, 60%);
+  cursor: pointer;
 }
 
 #cancel:hover{
   color: var(--Darkblue);
+  cursor: pointer;
 }
 
 /*setting for media version*/
